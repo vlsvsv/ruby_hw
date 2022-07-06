@@ -1,13 +1,14 @@
-array = []
+array_test = []
+
 (0..9).each { |i|
-  array[i] = rand(10)
+  array_test[i] = rand(10)
 }
 
-p array
+p array_test
 
 def rec_sum (array)
   if array.size == 0
-    0
+    return 0
   end
   if array.size == 1
     array[0]
@@ -17,4 +18,4 @@ def rec_sum (array)
   end
 end
 
-puts rec_sum array
+puts rec_sum array_test
