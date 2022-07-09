@@ -19,3 +19,4 @@ def rec_sum (array)
 end
 
 puts rec_sum array_test
+p array_test
