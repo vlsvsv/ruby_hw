@@ -3,9 +3,9 @@
 # Задание 1
 def bin_or(n)
   sum = 0
-  (0..n).each { |i|
+  (0..n).each do |i|
     sum |= i
-  }
+    end
   sum
 end
 
@@ -14,7 +14,7 @@ p bin_or 32
 
 # Задание 2
 
-test_str = "" # По всем тестовым строкам метод отработал
+test_str = "abc#d##c" # По всем тестовым строкам метод отработал
 
 def del_before(str)
   temp_arr = str.split("") # Создал на всякий случай для сохранения исходной строки
@@ -27,7 +27,7 @@ def del_before(str)
       temp_arr.delete_at(index)
     end
   end
-  temp_arr.join("") # Тут to_s не отрабатывал. Почему?
+  temp_arr.join # Тут to_s не отрабатывал. Почему?
 end
 
 p del_before test_str
